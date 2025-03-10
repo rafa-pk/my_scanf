@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:02:01 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/10 23:05:28 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/10 23:55:30 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	my_scanf(const char *fmt, ...)
 	i = 0;
 	matched = 0;
 	input_read = read(0, buff, BUFFER_SIZE - 1);
-	if (input_read <= 0)
+	if (input_read <= 0 || BUFFER_SIZE < 0)
 	{
 		va_end(ap);
 		return (0);
@@ -59,14 +59,28 @@ int	fmt_specs(char	fmt_spec, va_list ap)
 	match = 0;
 	if (fmt_spec == 'c')
 	{
-		
+		store_in_char(va_arg(ap, char *));	
 		match++;
 	}
 	else if (fmt_spec == 's')
-	
+	{
+		store_in_string(va_arg(ap, char *));
+		match++
+	}
 	else if (fmt_spec == 'd' || fmt_spec == 'i')
-	
+	{
+		store_in_int(va_arg(ap, int *));
+		match++
+	}
 	else if (fmt_spec == 'f')
-
+	{
+		store_in_float(va_arg(ap, float *));
+		match++
+	}
 	else if (fmt_spec == 'u')
+	{
+		store_in_uint(va_arg(ap, unsigned int *));
+		match++,
+	}
+	return (match);
 }

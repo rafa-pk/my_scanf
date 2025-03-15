@@ -6,39 +6,45 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 23:44:48 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/11 16:50:30 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/15 15:44:45 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "my_scanf.h"
 
-char	*store_in_char(char *c, int i, char *buff)
+void	store_in_char(char *c, int *j, char *buff)
 {
-	if (buff[i] != '\0') 
-		*c = buff[i];
+	char	value[2];
+
+	parse_buffer(buff, j, value);
+	*c = value[0];
 }
 
-char	*store_in_string(char *str, int i, char *buff)
+void	store_in_string(char *str, int *j, char *buff)
 {
-	int	j;
-
-	j = 0;
-	while (buff[i] == ' ' || buff['\n'])
-		i++;
-	while (buff)
+	parse_buffer(buff, j, str);
 }
 
-int	*store_in_int(int *nb)
+void	store_in_int(int *nb, int *j, char *buff)
 {
+	char	value[20];
 
+	parse_buffer(buff, j, value);
+	*nb = ft_atoi(value);
 }
 
-float	*store_in_float(float *dec_nb)
+void	store_in_float(float *dec_nb)
 {
+	char	value[20];
 
+	parse_buffer(buff, j, value);
+	*dec_nb = ft_atof(value); //create function
 }
 
-unsigned int	*store_in_uint(unsigned int *uint)
+void	store_in_uint(unsigned int *uint)
 {
+	char	value[20];
 
+	parse_buffer(buff, j, value);
+	*uint = (unsigned int) ft_atoi(value);
 }

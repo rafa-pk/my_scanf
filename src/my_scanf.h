@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 14:52:38 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/15 23:09:51 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/15 23:26:48 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@
 
 int		my_scanf(const char *str, ...);
 int		fmt_specs(char fmt_spec, va_list ap, int *j, char *buff);
-void	store_in_char(char *c);
-void	store_in_string(char *str);
-void	store_in_int(int *nb);
-void	store_in_float(float *dec_nb);
-void	store_in_uint(unsigned int *uint);
+void	store_in_char(char *c, int *j, char *buff);
+void	store_in_string(char *str, int *j, char *buff);
+void	store_in_int(int *nb, int *j, char *buff);
+void	store_in_float(double *dec_nb, int *j, char *buff);
+void	store_in_uint(unsigned int *uint, int *j, char *buff);
 int		read_input(char *buff, int size);
 size_t	ft_strlen(char *str);
 int		ft_isprint(int c);
@@ -38,6 +38,6 @@ int		ft_isdigit(int c);
 int		ft_atoi(char *str);
 void	parse_buffer(char *buff, int *j, char *parsed_buff);
 double	handle_decimals(char *str, int *i);
-double	handle_exponent(double nb, char *str, int i);
+double	handle_exponent(double nb, char *str, int *i);
 double	ft_atof(char *str);
 #endif

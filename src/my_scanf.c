@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:02:01 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/15 23:07:09 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/15 23:33:03 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ int	fmt_specs(char fmt_spec, va_list ap, int *j, char *buff)
 	}
 	return (match);
 }
-
+/*
 int	main(void)
 {
 	int				n = 0;
@@ -96,4 +96,4 @@ int	main(void)
 	my_scanf("%d %c %s %f %u", &n, &c, &str, &f, &u);
 	printf("content of n: %d\n content of c: %c\n content of str: %s\n content of f: %f\n content of u: %u\n", n, c, str, f, u);
 	return (0);
-}
+}*/

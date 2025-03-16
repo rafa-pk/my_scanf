@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:02:01 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/15 23:33:03 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/16 18:21:39 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,8 +92,24 @@ int	main(void)
 	double			f = 0.0;
 	unsigned int	u = 0;
 
-	printf("test for int:   test for char:   test for string:    test for float:    test for unsigned int:   ");
-	my_scanf("%d %c %s %f %u", &n, &c, &str, &f, &u);
-	printf("content of n: %d\n content of c: %c\n content of str: %s\n content of f: %f\n content of u: %u\n", n, c, str, f, u);
+	printf("test for int: \n");
+	my_scanf("%d", &n);
+	printf("content of n: %d\n\n", n);
+	
+	printf("test for char: \n"); //segmentation fault to fix
+	my_scanf("%c", c);
+	printf("content of c: %c\n\n", c);
+	
+	printf("test for string: \n");
+	my_scanf("%s", str);
+	printf("content of str: %s\n\n", str);
+	
+	printf("test for float: \n"); //segmentation fault to fix
+	my_scanf("%f", f);
+	printf("content of f: %f\n\n", f);
+
+	printf("test for uint: \n"); //segmentation fault to fix
+	my_scanf("%u", u);
+	printf("content of u: %u\n\n", u);
 	return (0);
 }*/

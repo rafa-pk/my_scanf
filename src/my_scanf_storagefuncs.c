@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 23:44:48 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/15 23:26:08 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/16 18:11:29 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	store_in_char(char *c, int *j, char *buff)
 {
-	char	value[1];
+	char	value[2];
 
 	parse_buffer(buff, j, value);
 	*c = value[0];

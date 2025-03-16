@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 14:52:38 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/15 23:26:48 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/16 21:59:55 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ void	store_in_int(int *nb, int *j, char *buff);
 void	store_in_float(double *dec_nb, int *j, char *buff);
 void	store_in_uint(unsigned int *uint, int *j, char *buff);
 int		read_input(char *buff, int size);
-size_t	ft_strlen(char *str);
 int		ft_isprint(int c);
 int		ft_isdigit(int c);
 int		ft_atoi(char *str);

@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:02:01 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/16 18:21:39 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/16 18:32:11 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,20 +96,20 @@ int	main(void)
 	my_scanf("%d", &n);
 	printf("content of n: %d\n\n", n);
 	
-	printf("test for char: \n"); //segmentation fault to fix
-	my_scanf("%c", c);
+	printf("test for char: \n");
+	my_scanf("%c", &c);
 	printf("content of c: %c\n\n", c);
 	
 	printf("test for string: \n");
 	my_scanf("%s", str);
 	printf("content of str: %s\n\n", str);
 	
-	printf("test for float: \n"); //segmentation fault to fix
-	my_scanf("%f", f);
+	printf("test for float: \n"); //handling of decimals needs to be fixed
+	my_scanf("%f", &f);
 	printf("content of f: %f\n\n", f);
 
-	printf("test for uint: \n"); //segmentation fault to fix
-	my_scanf("%u", u);
+	printf("test for uint: \n");
+	my_scanf("%u", &u);
 	printf("content of u: %u\n\n", u);
 	return (0);
 }*/

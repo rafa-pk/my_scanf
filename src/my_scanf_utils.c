@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 21:00:45 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/15 23:10:52 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/16 18:40:10 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ double	handle_decimals(char *str, int *i)
 		divisor *= 10.0;
 		(*i)++;
 	}
-	return (fraction / divisor);
+	return (fraction);
 }
 
 double	handle_exponent(double nb, char *str, int *i)

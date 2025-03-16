@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:02:01 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/16 18:32:11 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/16 23:22:27 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ int	main(void)
 {
 	int				n = 0;
 	char			c = 0;
-	char			str[30];
+	char			str[50];
 	double			f = 0.0;
 	unsigned int	u = 0;
 
@@ -104,7 +104,7 @@ int	main(void)
 	my_scanf("%s", str);
 	printf("content of str: %s\n\n", str);
 	
-	printf("test for float: \n"); //handling of decimals needs to be fixed
+	printf("test for float: \n");
 	my_scanf("%f", &f);
 	printf("content of f: %f\n\n", f);
 

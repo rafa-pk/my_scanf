@@ -6,7 +6,7 @@
 #    By: raica-ba <raica-ba@student.42lisboa.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/15 23:11:43 by raica-ba          #+#    #+#              #
-#    Updated: 2025/03/16 22:24:45 by raica-ba         ###   ########.fr        #
+#    Updated: 2025/03/16 22:51:05 by raica-ba         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ OBJ_DIR = obj
 OBJ = $(addprefix $(OBJ_DIR)/, $(SRC_FILES:.c=.o))
 SRC = $(addprefix $(SRC_DIR)/, $(SRC_FILES))
 
-SRC_FILES = my_scanf.c my_scanf_storagefuncs.c my_scanf_utils.c my_scanf_auxiliaryfuncs\
+SRC_FILES = my_scanf.c my_scanf_storagefuncs.c my_scanf_utils.c my_scanf_auxiliaryfuncs.c\
 
 EXEC = my_scanf
 

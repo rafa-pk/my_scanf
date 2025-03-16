@@ -6,7 +6,7 @@
 /*   By: raica-ba <raica-ba@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/16 22:07:26 by raica-ba          #+#    #+#             */
-/*   Updated: 2025/03/16 22:22:44 by raica-ba         ###   ########.fr       */
+/*   Updated: 2025/03/16 23:08:36 by raica-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ double	handle_exponent(double nb, char *str, int *i)
 {
 	int		exp_sign;
 	double	mult;
-	double	exp;
+	int		exp;
 
 	exp_sign = 1;
 	mult = 1.0;
@@ -66,10 +66,10 @@ double	handle_exponent(double nb, char *str, int *i)
 	}
 	while (exp > 0)
 	{
-		if (exp_sign == 0)
-			mult *= 10.0;
-		else
+		if (exp_sign == -1)
 			mult /= 10.0;
+		else
+			mult *= 10.0;
 		exp--;
 	}
 	return (nb * mult);
